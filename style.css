@@ -6,34 +6,41 @@ html {
   color: #000;
   font-family: 'Manrope', Arial, sans-serif; }
 
+a {
+  color: #000;
+  text-decation: none; }
+
 .wrapper {
   margin: 5vh;
   display: grid;
   grid-template-columns: 1fr;
-  height: calc(100vh - 10vh); }
+  grid-row-gap: 5vh; }
 
 .twitter {
   align-self: flex-end; }
 
+.wrapper > div {
+  border: 1px solid #fff0; }
+
 @media (min-width: 900px) {
   .wrapper {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-row: 1fr 2fr 1fr; }
+    grid-template-row: 1fr 2fr 1fr 1fr; }
 
   .name {
     grid-column: 1/2;
     grid-row: 1/2; }
 
-  .mail {
-    grid-column: 2/3;
-    grid-row: 1/2; }
-
   .desc {
-    grid-column: 2/4;
-    grid-row: 2/3; }
+    grid-column: 2/5;
+    grid-row: 1/6; }
+
+  .mail {
+    grid-column: 1/2;
+    grid-row: 3/4; }
 
   .twitter {
-    grid-column: 2/3;
-    grid-row: 3/4; } }
+    grid-column: 1/2;
+    grid-row: 5/6; } }
 
 /*# sourceMappingURL=style.css.map */
